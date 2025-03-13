@@ -1,0 +1,74 @@
+html {
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    background-color: #01122e;
+    border-bottom: 2px solid white;
+}
+
+nav {
+    float: right;
+    background-color: #01122e;
+    overflow: hidden;
+}
+
+nav a {
+    color: white;
+    float: left;
+    display: block;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.5rem;
+    text-decoration: none;
+    padding: 1em;
+    cursor: pointer;
+}
+
+nav a:hover {
+    color: #01122e;
+    background-color: white;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+    cursor: pointer;
+  }
+
+
+.dropbtn {
+    color: white;
+    float: left;
+    display: block;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.5rem;
+    line-height: 1;
+    background-color: #01122e;
+    border: none;
+    padding: 1em;
+    cursor: pointer;
+}
+
+.dropbtn:hover {
+    color: #01122e;
+    background-color: white;
+}
+
+.dropdown-content {
+    position: absolute;
+    min-width: 200px;
+    top: 4.5em;
+    background-color: #cdcdcd;
+}
+
+body {
+    background-color: #02193d;
+}
