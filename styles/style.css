@@ -6,6 +6,7 @@ html {
 
 header {
     position: fixed;
+    top: 0em;
     width: 100%;
     padding: 0px;
     margin: 0px;
@@ -14,7 +15,6 @@ header {
 }
 
 nav {
-    float: right;
     background-color: #01122e;
     overflow: hidden;
 }
@@ -25,7 +25,7 @@ nav a {
     display: block;
     text-align: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     text-decoration: none;
     padding: 1em;
     cursor: pointer;
@@ -34,6 +34,7 @@ nav a {
 nav a:hover {
     color: #01122e;
     background-color: white;
+    text-decoration: underline;
 }
 
 .dropdown {
@@ -43,13 +44,13 @@ nav a:hover {
   }
 
 
-.dropbtn {
+#dropbtn {
     color: white;
     float: left;
     display: block;
     text-align: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     line-height: 1;
     background-color: #01122e;
     border: none;
@@ -57,18 +58,116 @@ nav a:hover {
     cursor: pointer;
 }
 
-.dropbtn:hover {
+#night-theme, #day-theme {
+    color: white;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.25rem;
+    line-height: 1;
+    background-color: #01122e;
+    border: none;
+    padding: 1em;
+    cursor: pointer;
+    padding-left: 0.3em;
+}
+
+#night-theme:hover, #day-theme:hover {
     color: #01122e;
     background-color: white;
 }
 
-.dropdown-content {
+#dropbtn i {
+    padding-right: 0.4em;
+}
+
+#night-theme i, #day-theme i {
+    padding-right: 0.4em;
+    padding-left: 0.4em;
+}
+
+#dropbtn:hover {
+    color: #01122e;
+    background-color: white;
+    text-decoration: underline;
+}
+
+#dropdown-content {
     position: absolute;
-    min-width: 200px;
-    top: 4.5em;
-    background-color: #cdcdcd;
+    top: 3.8em;
+    background-color: #5f5e5e;
+    display: flex;
+    flex-direction: column;
+    font-size: 1em;
+    align-items: stretch;
+}
+
+#dropdown-content a {
+    text-align: left;
+}
+
+.theme-switch {
+    position: absolute;
+    right: 0;
+    top: 0;
 }
 
 body {
     background-color: #02193d;
+}
+
+.about {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: 2px solid white;
+    margin: 6em 5% 3em 5%;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 3em;
+    color: white;
+    line-height: 1.4;
+}
+
+.bio {
+    padding: 1em;
+    background-color: #01122e;
+}
+
+.bio img {
+    width:0;
+    min-width:100%;
+}
+
+.intro {
+    padding: 1em;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+.skills {
+    display: flex;
+    flex-direction: row;
+    font-size: 2em;
+}
+
+.skill {
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hide {
+    position: absolute !important;
+    overflow: hidden !important;
+    clip-path: rect(0 0 0 0);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
 }

@@ -6,29 +6,64 @@
         <title>Bren-Sen web developer portfolio</title>
         <link rel="stylesheet" href="./styles/reset.css">
         <link rel="stylesheet" href="./styles/style.css">
+        <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"/> 
         <script src="./scripts/script.js" defer></script>
+        <script src="https://kit.fontawesome.com/98f33ae86a.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <header>
             <nav>
                 <a href="index.html">HOME</a>
                 <div class="dropdown">
-                    <button class="dropbtn"><!--<i class="fa"</i>-->PROJECTS</button>
-                    <div class="dropdown-content">
-                        <a href="">PROJECT 1</a>
-                        <a href="">PROJECT 2</a>
+                    <button id="dropbtn"><i class="fa-solid fa-chevron-down fa-sm"></i>PROJECTS</button>
+                    <div id="dropdown-content" class="hide">
+                        <a href="">Random message generator</a>
+                        <a href="">Credit card checker tool</a>
+                        <a href="">Some fancy website</a>
+                        <a href="">Another project to show</a>
                     </div>
                 </div>
                 <a href="">CONTACT</a>
             </nav>
+            <div class="theme-switch">
+                <button id="day-theme"><i class="fa-solid fa-sun fa-sm"></i>day</button>
+                <button id="night-theme"><i class="fa-solid fa-moon fa-sm"></i>night</button>
+            </div>
         </header>
         <main>
             <section class="about">
                 <article class="bio">
-
+                    <img src="./assets/cat-reading-glasses-stockcake.jpg" alt="Photo of Bren Sen">
+                    <h2>About Me</h2>
+                    <p>Hi, I'm <em>Bren Sen</em>, a self-taught full-stack web developer. With a master degree in anthropology and 10 years of experience studying mummies, a reconversion as a web designer wasn't the obvious choice. It was an urge to understand how the web works that first brought me in contact with coding, and once I had a taste for it there was no going back. Since, I've thrived to keep learning and honing my skills</p>
                 </article>
-                <article class="edu">
-                    
+                <article class="intro">
+                    <h1>Bren Sen web development</h1>
+                    <h2>&lt;code&gt; A simple philosophy for great user experience &lt;/code&gt;</h2>
+                    <p>My no bullshit approach to web development focuses on <em>responsive design</em> to produce sleek an unclutered websites and applications that guarantee a great <em>user-experience</em> tempor incididunt ut labore et. Under the hood, the honus is on <em>easy to maintain code</em> with a particular attention to <em>accessibility</em>. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat <em>interactive</em>. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <h3>Skills</h3>
+                    <div class="skills">
+                        <div class="skill">
+                            <i class="devicon-html5-plain"></i>
+                            <p>HTML</p>
+                        </div>
+                        <div class="skill">
+                            <i class="devicon-css3-plain"></i>
+                            <p>CSS</p>
+                        </div>
+                        <div class="skill">
+                            <i class="devicon-javascript-plain"></i>
+                            <p>JS</p>
+                        </div>
+                        <div class="skill">
+                            <i class="devicon-git-plain"></i>
+                            <p>GIT</p>
+                        </div>
+                    </div>
+                    <div class="cv">
+                        <p>Check out my CV:</p>
+                        <button><i class="fa-solid fa-file-pdf fa-sm"></i></button>
+                    </div>
                 </article>
             </section>
             <section class="projects">
