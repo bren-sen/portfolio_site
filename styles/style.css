@@ -12,6 +12,7 @@ header {
     margin: 0px;
     background-color: #080808;
     border-bottom: 2px solid white;
+    z-index: 5;
 }
 
 nav {
@@ -290,12 +291,15 @@ h3 {
 }
 
 .project {
+    position: relative;
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
     grid-template-rows: 1fr 2fr;
     column-gap: 2em;
     background-color: #333;
     align-items: center;
+    margin-bottom: 2em;
+    border: 1px solid #afafaf;
 }
 
 .project:hover {
@@ -338,10 +342,16 @@ h3 {
     grid-row: 1 / 2;
 }
 
-
-
-
-
+/* needed for js */
+#focus-box {
+    position: fixed;
+    top: 4em;
+    z-index: -1;
+    background-color: #000;
+    opacity: 0;
+    width: 100vw;
+    height: 100vh;
+}
 
 .hide {
     position: absolute !important;
